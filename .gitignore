@@ -1,0 +1,4 @@
+
+*.JPG
+__pycache__/db.cpython-38.pyc
+Database.csv
