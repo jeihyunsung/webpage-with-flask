@@ -1,0 +1,16 @@
+.image{
+    width: 100%;
+    height:100%;
+    display:grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+.picture{
+    width:100%;
+    height:100%;
+}
+.pic{
+    width:1000px;
+    height:1000px;
+    object-fit: cover;
+}

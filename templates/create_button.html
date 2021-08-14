@@ -1,0 +1,16 @@
+{% extends "grid.html"  %}
+{% block header %}
+{% endblock %}
+
+{% block content %}
+<div class="create_button">
+
+    <form action="/create" enctype="multipart/form-data" method="post">
+        <p><input type="text" size="100" name="title" placeholder="title"></p>
+        <p><textarea rows="30" cols="100" name="description" placeholder="description"></textarea></p>
+        <p><input type="file" name="file"></p>
+        <p><input type="submit" required></p>
+    </form>
+
+</div>
+{% endblock %}

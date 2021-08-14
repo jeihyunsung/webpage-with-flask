@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>grid</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/grid.css') }}">
+        {% block header %}{% endblock %}
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="item">
+                <h1><a href="/">MyHome</a></h1>
+
+            </div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item">
+                <ol>
+                    <li><a href="/about">About us</a></li>
+                    <li><a href="/store">Store</a></li>
+                    <li><a href="/collection">Collection</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ol>        
+            </div>
+            <div class="item">
+                {% block content %}{% endblock %}
+            </div>
+            <div class="item"></div>
+            <div class="item">
+                <p>
+                    Copyright© 2021. All Rights Not Reserved.
+                </p>
+            </div>
+            <div class="item"></div>
+            <!-- <div class="item">I</div> -->
+        </div>
+
+
+    </body>
+</html>

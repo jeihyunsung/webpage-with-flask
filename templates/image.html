@@ -1,0 +1,27 @@
+{% extends "grid.html"  %}
+{% block header %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/image.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="image">
+<div class="picture">
+    <img class="pic" src="{{ url_for('static', filename='image/db/%s.jpg'%id) }}">
+</div>
+<div class="content">
+    <p>{{title}}</p>
+    <p>
+        {{content}}
+    </p>
+    <p>
+    <button onclick="location.href='/update_button/{{id}}'">Update</buttononclick>
+    <form action="/delete" method="post">
+        <input type="hidden" name="imageID" value={{id}}>
+        <button type="submit">Delete</button>
+    </form>
+    </p>
+
+</div>
+
+</div>
+{% endblock %}
